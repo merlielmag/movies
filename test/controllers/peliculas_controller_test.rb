@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class StaticsControllerTest < ActionDispatch::IntegrationTest
+class PeliculasControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get statics_index_url
+    get peliculas_index_url
     assert_response :success
   end
 
