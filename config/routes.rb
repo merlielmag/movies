@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/about' => 'statics/about', :as => :about
+  get '/about' => 'statics#about', :as => :about
 
   root 'statics#index'
 
