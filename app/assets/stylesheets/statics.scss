@@ -7,10 +7,21 @@
   height: 100vh;
 }
 
-.row-div {
-  background: orange;
+#myCarousel {
+  width: 500px;
+}
+
+.marquesina {
+  background: black;
   color: white;
-  padding: .5em;
+  height: 30px;
+  padding-left: 20px;
+  padding-top: 4px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.row-div {
   max-width: 1500px;
   margin: auto;
 }
@@ -29,4 +40,17 @@
 
 .align-right {
   text-align: right;
+}
+
+.background {
+  background: orange;
+  color: white;
+}
+
+.padding {
+  padding: .5em;
+}
+
+.border {
+  border: 1px solid white;
 }
