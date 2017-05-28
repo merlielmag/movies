@@ -1,91 +1,152 @@
 <div id="wrapper">
-  <header class="row-div background padding">
-    <div class="row">
-      <div class="col-md-3">
-        <img src="https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png" class="img-responsive" alt="">
-      </div>
-      <div class="col-md-5">
-        <div class="bottom">
-          <input class="search-field" type="text" name="search" placeholder="Search movies...">
+    <header class="background padding">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png" class="img-responsive" alt="">
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-3 col-md-offset-3 align-right">
-            <%= link_to 'Nosotros', about_path %>
-          </div>
-          <div class="col-md-3 align-right">
-            <%= link_to 'Login', new_user_session_path %>
-          </div>
-          <div class="col-md-3 align-right">
-            <%= link_to 'Sign up', new_user_registration_path %>
+        <div class="col-md-5">
+          <div class="bottom">
+            <input class="search-field" type="text" name="search" placeholder="Search movies...">
           </div>
         </div>
-        <div class="row bottom">
-          <div class="col-md-3">
-            <p>Movies</p>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3 align-right">
+              <%= link_to 'Nosotros', about_path %>
+            </div>
+            <div class="col-md-3 align-right">
+              <%= link_to 'Login', new_user_session_path %>
+            </div>
+            <div class="col-md-3 align-right">
+              <%= link_to 'Sign up', new_user_registration_path %>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p>Tv</p>
+          <div class="row bottom">
+            <div class="col-md-3">
+              <p>Movies</p>
+            </div>
+            <div class="col-md-3">
+              <p>Tv</p>
+            </div>
+            <div class="col-md-3">
+              <p>News</p>
+            </div>
+            <div class="col-md-3">
+              <p>Tickets</p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p>News</p>
+        </div>
+      </div>
+    </header>
+    <div class="marquesina border">
+      <p>Trending: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="content_video">
+      <div class="two_column">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="http://lorempixel.com/400/200/" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Peli - 1</h3>
+                <p>...is always so much fun!</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="http://lorempixel.com/400/200/" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Peli - 2</h3>
+                <p>...is always so much fun!</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="http://lorempixel.com/400/200/" alt="New york" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Peli - 3</h3>
+                <p>...is always so much fun!</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p>Tickets</p>
-          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="one_column">
+        <img class="img-responsive" src="http://lorempixel.com/400/402/" alt="">
+      </div>
+      <div class="one_column">
+        <img class="img-responsive" src="http://lorempixel.com/400/402/" alt="">
+      </div>
+    </div>
+    <div class="clear">
+      <hr>
+    </div>
+    <div class="padding">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
     </div>
-  </header>
-  <div class="marquesina border">
-    <p>Trending: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  <div class="row-div">
-    <div id="myCarousel" class="carousel slide border" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://lorempixel.com/400/200/" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>Peli - 1</h3>
-            <p>...is always so much fun!</p>
-          </div>
+    <footer class="blackground">
+      <div class="row">
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
-        <div class="item">
-          <img src="http://lorempixel.com/400/200/" alt="Chicago" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>Peli - 2</h3>
-            <p>...is always so much fun!</p>
-          </div>
+        <div class="col-md-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-
-        <div class="item">
-          <img src="http://lorempixel.com/400/200/" alt="New york" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>Peli - 3</h3>
-            <p>...is always so much fun!</p>
-          </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col-md-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </footer>
   </div>
-</div>
