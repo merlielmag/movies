@@ -1,6 +1,41 @@
-<h1>Statics#index</h1>
-<p>Find me in app/views/statics/index.html.erb</p>
-
-<%= link_to 'Nosotros', about_path %><br>
-<%= link_to 'Login', new_user_session_path %><br>
-<%= link_to 'Sign up', new_user_registration_path %><br>
+<div id="wrapper">
+  <header class="row-div">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png" class="img-responsive" alt="">
+      </div>
+      <div class="col-md-5">
+        <div class="bottom">
+          <input class="search-field" type="text" name="search" placeholder="Search movies...">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3 align-right">
+            <%= link_to 'Nosotros', about_path %>
+          </div>
+          <div class="col-md-3 align-right">
+            <%= link_to 'Login', new_user_session_path %>
+          </div>
+          <div class="col-md-3 align-right">
+            <%= link_to 'Sign up', new_user_registration_path %>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="col-md-3">
+            <p>Movies</p>
+          </div>
+          <div class="col-md-3">
+            <p>Tv</p>
+          </div>
+          <div class="col-md-3">
+            <p>News</p>
+          </div>
+          <div class="col-md-3">
+            <p>Tickets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
