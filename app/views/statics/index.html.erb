@@ -10,18 +10,18 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="row">
+          <div class="row text_link padding">
             <div class="col-md-3 col-md-offset-3 align-right">
-              <%= link_to 'Nosotros', about_path %>
+              <%= link_to 'About', about_path %>
             </div>
             <div class="col-md-3 align-right">
-              <%= link_to 'Login', new_user_session_path %>
+              <%= link_to 'Log in', new_user_session_path %>
             </div>
             <div class="col-md-3 align-right">
               <%= link_to 'Sign up', new_user_registration_path %>
             </div>
           </div>
-          <div class="row bottom">
+          <div class="row text-center text_header padding">
             <div class="col-md-3">
               <p>Movies</p>
             </div>
@@ -39,7 +39,20 @@
       </div>
     </header>
     <div class="marquesina border">
-      <p>Trending: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="row">
+        <div class="col-md-9">
+          <p>Trending: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-inline align-right">
+            <li>Follow us</li>
+            <li class="fa fa-twitter"></li>
+            <li class="fa fa-facebook-square"></li>
+            <li class="fa fa-youtube-play"></li>
+            <li class="fa fa-instagram"></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="content_video">
       <div class="two_column">
