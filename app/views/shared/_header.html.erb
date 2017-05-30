@@ -1,7 +1,9 @@
 <header class="background padding">
   <div class="row">
     <div class="col-md-3">
-      <img src="https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png" class="img-responsive" alt="">
+      <%= link_to root_path do %>
+        <%= image_tag "https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png", class: "img-responsive" %>
+      <% end %>
     </div>
     <div class="col-md-5">
       <div class="bottom">
@@ -43,13 +45,17 @@
       <p class="margin_bottom"><span class="text_resaltat">Trending: </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
     <div class="col-md-3">
-      <ul class="list-inline align-right margin_bottom">
-        <li><span class="text_resaltat">Follow us</span></li>
-        <li class="fa fa-twitter"></li>
-        <li class="fa fa-facebook-square"></li>
-        <li class="fa fa-youtube-play"></li>
-        <li class="fa fa-instagram"></li>
-      </ul>
+      <div class="row">
+        <div class="col-sm-5">
+          <p class="text_resaltat">Follow us</p>
+        </div>
+        <div class="col-sm-7 footer_link">
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.youtube.com/" class="fa fa-youtube-play"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

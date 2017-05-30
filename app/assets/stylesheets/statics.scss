@@ -6,7 +6,8 @@ $grey: #EEE;
 $fosc: grey;
 $white: #FFF;
 $black: black;
-$resaltat: yellow;
+$blue: #1B97E3;
+$resaltat: #FDEE00;
 $background: orange;
 
 
@@ -88,7 +89,19 @@ body {
 }
 
 .icones {
-  font-size: 2em;
+  font-size: 2.5em;
+}
+
+.icones a {
+  text-decoration: none !important;
+  color: $blue;
+  font-size: .9em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.icones a:hover {
+  color: $resaltat;
 }
 
 .marquesina {
@@ -117,6 +130,7 @@ body {
 
 .search-field {
   width: 100%;
+  color: $black;
 }
 
 .sub_text {
@@ -144,6 +158,7 @@ body {
 .text_resaltat {
   color: $resaltat;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .titol {
