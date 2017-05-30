@@ -6,10 +6,6 @@ body {
   background: #EEEEEE !important;
 }
 
-ul {
-  margin-bottom: -10px !important;
-}
-
 #wrapper {
   max-width: 1100px;
   margin: auto;
@@ -46,6 +42,10 @@ ul {
 
 .bottom {
   margin-top: 2.5em;
+}
+
+.margin_bottom {
+  margin-bottom: -10px !important;
 }
 
 .search-field {

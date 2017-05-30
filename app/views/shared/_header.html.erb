@@ -1,0 +1,55 @@
+<header class="background padding">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png" class="img-responsive" alt="">
+    </div>
+    <div class="col-md-5">
+      <div class="bottom">
+        <input class="search-field" type="text" name="search" placeholder="Search movies...">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="row text_link padding">
+        <div class="col-md-3 col-md-offset-3 align-right">
+          <%= link_to 'About', about_path %>
+        </div>
+        <div class="col-md-3 align-right">
+          <%= link_to 'Log in', new_user_session_path %>
+        </div>
+        <div class="col-md-3 align-right">
+          <%= link_to 'Sign up', new_user_registration_path %>
+        </div>
+      </div>
+      <div class="row text-center text_header padding">
+        <div class="col-md-3">
+          <p>Movies</p>
+        </div>
+        <div class="col-md-3">
+          <p>Tv</p>
+        </div>
+        <div class="col-md-3">
+          <p>News</p>
+        </div>
+        <div class="col-md-3">
+          <p>Tickets</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="marquesina border">
+  <div class="row">
+    <div class="col-md-9">
+      <p class="margin_bottom"><span class="text_resaltat">Trending: </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-md-3">
+      <ul class="list-inline align-right margin_bottom">
+        <li><span class="text_resaltat">Follow us</span></li>
+        <li class="fa fa-twitter"></li>
+        <li class="fa fa-facebook-square"></li>
+        <li class="fa fa-youtube-play"></li>
+        <li class="fa fa-instagram"></li>
+      </ul>
+    </div>
+  </div>
+</div>
