@@ -16,6 +16,18 @@ body {
   //width: 500px;
 }
 
+#content {
+  width: 95%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.content {
+  border: 1px solid lightgrey;
+  padding: 1em;
+}
+
 .clear {
   clear: both;
 }
