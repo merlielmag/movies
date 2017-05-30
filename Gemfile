@@ -21,6 +21,9 @@ gem 'bootstrap-sass', '3.3.7'
 # ---DEVISE---
 gem 'devise'
 
+# ---FONT-AWESOME---
+gem 'font-awesome-sass'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
