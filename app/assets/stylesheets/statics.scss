@@ -23,13 +23,18 @@ body {
   margin-bottom: 1em;
 }
 
-.content {
-  border: 1px solid lightgrey;
-  padding: 1em;
+.align-right {
+  text-align: right;
+  padding-right: .5em;
 }
 
-.clear {
-  clear: both;
+.background {
+  background: orange;
+  color: white;
+}
+
+.background_label {
+  background: yellow;
 }
 
 .blackground {
@@ -42,6 +47,24 @@ body {
   letter-spacing: 1px;
 }
 
+.border {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.bottom {
+  margin-top: 2.5em;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  border: 1px solid lightgrey;
+  padding: 1em;
+}
+
 .marquesina {
   background: black;
   color: white;
@@ -52,35 +75,9 @@ body {
   letter-spacing: 1px;
 }
 
-.bottom {
-  margin-top: 2.5em;
-}
 
 .margin_bottom {
   margin-bottom: -10px !important;
-}
-
-.search-field {
-  width: 100%;
-}
-
-.align-right {
-  text-align: right;
-  padding-right: .5em;
-}
-
-.background {
-  background: orange;
-  color: white;
-}
-
-.padding {
-  padding: .5em;
-}
-
-.border {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }
 
 .one_column {
@@ -89,9 +86,11 @@ body {
   float: left;
 }
 
-.two_column {
-  width: 50%;
-  float: left;
+.padding {
+  padding: .5em;
+}
+.search-field {
+  width: 100%;
 }
 
 .text_header {
@@ -113,4 +112,13 @@ body {
 
 .text_resaltat {
   color: yellow;
+}
+
+.titol {
+  text-transform: uppercase; font-weight: bold;
+}
+
+.two_column {
+  width: 50%;
+  float: left;
 }
