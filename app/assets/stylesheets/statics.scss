@@ -5,6 +5,7 @@
 $grey: #EEE;
 $fosc: grey;
 $white: #FFF;
+$black: black;
 $resaltat: yellow;
 $background: orange;
 
@@ -31,29 +32,14 @@ body {
   margin-bottom: 1em;
 }
 
-<<<<<<< HEAD
+.align-right {
+  text-align: right;
+  padding-right: .5em;
+}
+
 .content {
   border: 1px solid $grey;
   padding: 1em;
-=======
-.align-right {
-  text-align: right;
-  padding-right: .5em;
->>>>>>> about
-}
-
-.background {
-  background: orange;
-  color: white;
-}
-
-.background_label {
-  background: yellow;
-}
-
-.align-right {
-  text-align: right;
-  padding-right: .5em;
 }
 
 .background {
@@ -61,8 +47,12 @@ body {
   color: $white;
 }
 
+.background_label {
+  background: $resaltat;
+}
+
 .blackground {
-  background: black;
+  background: $black;
   color: $white;
   padding-left: 20px;
   padding-top: 4px;
@@ -71,54 +61,9 @@ body {
   letter-spacing: 1px;
 }
 
-<<<<<<< HEAD
-.bottom {
-  margin-top: 2.5em;
-}
-
 .border {
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
-}
-
-.footer_link a {
-  text-decoration: none !important;
-  color: $white;
-}
-.footer_link a:hover {
-  color: $resaltat;
-}
-
-.icones {
-  font-size: 1.5em;
-}
-
-.marquesina {
-  background: black;
-  color: $white;
-  height: 30px;
-  padding-left: 20px;
-  padding-top: 4px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-}
-
-.margin_bottom {
-  margin-bottom: -10px !important;
-}
-
-.search-field {
-  width: 100%;
-}
-
-.padding {
-  padding: .5em;
-}
-
-=======
-.border {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
 }
 
 .bottom {
@@ -130,13 +75,25 @@ body {
 }
 
 .content {
-  border: 1px solid lightgrey;
+  border: 1px solid $grey;
   padding: 1em;
 }
 
+.footer_link a {
+  text-decoration: none !important;
+  color: $white;
+}
+.footer_link a:hover {
+  color: $resaltat;
+}
+
+.icones {
+  font-size: 2em;
+}
+
 .marquesina {
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   height: 30px;
   padding-left: 20px;
   padding-top: 4px;
@@ -144,12 +101,10 @@ body {
   letter-spacing: 1px;
 }
 
-
 .margin_bottom {
   margin-bottom: -10px !important;
 }
 
->>>>>>> about
 .one_column {
   width: 25%;
   border-left: 1px solid $white;
@@ -159,6 +114,7 @@ body {
 .padding {
   padding: .5em;
 }
+
 .search-field {
   width: 100%;
 }
@@ -191,7 +147,8 @@ body {
 }
 
 .titol {
-  text-transform: uppercase; font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .two_column {
