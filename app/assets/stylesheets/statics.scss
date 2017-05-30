@@ -31,13 +31,22 @@ body {
   margin-bottom: 1em;
 }
 
+.align-right {
+  text-align: right;
+  padding-right: .5em;
+
 .content {
   border: 1px solid $grey;
   padding: 1em;
 }
 
-.clear {
-  clear: both;
+.background {
+  background: orange;
+  color: white;
+}
+
+.background_label {
+  background: yellow;
 }
 
 .align-right {
@@ -109,9 +118,11 @@ body {
   float: left;
 }
 
-.two_column {
-  width: 50%;
-  float: left;
+.padding {
+  padding: .5em;
+}
+.search-field {
+  width: 100%;
 }
 
 .sub_text {
@@ -139,4 +150,13 @@ body {
 .text_resaltat {
   color: $resaltat;
   text-transform: uppercase;
+}
+
+.titol {
+  text-transform: uppercase; font-weight: bold;
+}
+
+.two_column {
+  width: 50%;
+  float: left;
 }
