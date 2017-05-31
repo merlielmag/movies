@@ -1,0 +1,46 @@
+<div id="wrapper">
+  <div class="titol">
+    <h2>Mostrar pelicula</h2>
+  </div>
+  <hr>
+
+  <%= form_for(@pelicula) do |f| %>
+    <div class="field">
+      <label class="control-label col-sm-2">Id:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" value="<%= @pelicula.id %>">
+        </div>
+    </div> <!-- end field -->
+    <div class="field">
+      <label class="control-label col-sm-2">Titol:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" value="<%= @pelicula.name %>">
+        </div>
+    </div> <!-- end field -->
+    <div class="field">
+      <label class="control-label col-sm-2">Estrelles:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" value="<%= @pelicula.stars %>">
+        </div>
+    </div> <!-- end field -->
+    <div class="field">
+      <label class="control-label col-sm-2">Protagonista:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" value="<%= @pelicula.main_actor %>">
+        </div>
+    </div> <!-- end field -->
+    <div class="field">
+      <label class="control-label col-sm-2">Any:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" value="<%= @pelicula.year %>">
+        </div>
+    </div> <!-- end field -->
+  <% end %>
+  <div class="field">
+    <div class="col-lg-12">
+      <br>
+      <%= link_to 'Tornar', peliculas_path, class:"btn btn-sm btn-success" %>
+    </div>
+    <%=@nom_de_peli%>
+  </div> <!-- end field -->
+</div>
