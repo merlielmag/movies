@@ -1,0 +1,33 @@
+<div id="wrapper">
+  <div class="titol">
+    <h2>Añade aquí una nueva película</h2>
+  </div>
+
+  <div class="cos">
+    <%= form_for @pelicula do |peli| %>
+      <p>
+        <%= peli.label :Título %> <br>
+        <%= peli.text_field :name %>
+      </p>
+
+      <p>
+        <%= peli.label :Estrellas %> <br>
+        <%= peli.text_field :stars %>
+      </p>
+      <p>
+        <%= peli.label :Actor_Principal %> <br>
+        <%= peli.text_field :main_actor %>
+      </p>
+      <p>
+        <%= peli.label :Año %> <br>
+        <%= peli.text_field :year %>
+      </p>
+
+      <%= peli.submit "Añadir peli", class:'btn btn-sm btn-info boto' %>
+
+    <% end %>
+    <% @pelicula.errors.full_messages.each do |mensaje| %>
+      <%= mensaje %>
+    <% end %>
+  </div>
+</div>
