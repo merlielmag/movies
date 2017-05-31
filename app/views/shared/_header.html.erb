@@ -1,42 +1,29 @@
 <header class="background padding border">
   <div class="row">
-    <div class="col-md-3 col-xs-6">
+    <div class="col-md-4 col-xs-6">
       <%= link_to root_path do %>
         <%= image_tag "https://staticv2-4.rottentomatoes.com/static/images/logos/rtlogo.png", class: "img-responsive" %>
       <% end %>
     </div>
-    <div class="col-md-5 hidden-sm hidden-xs">
-      <div class="bottom">
-        <input class="search-field" type="text" name="search" placeholder="Search movies...">
-      </div>
-    </div>
-    <div class="col-sm-4 hidden-sm hidden-xs">
-      <div class="row text_link text-center">
-        <div class="col-sm-3 col-sm-offset-3">
-          <%= link_to 'About', about_path %>
+    <div class="col-md-8 col-xs-6">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <div class="col-sm-3">
-          <%= link_to 'Log in', new_user_session_path %>
+        <div class="collapse navbar-collapse text_link" id="bs-navbar">
+          <ul class="nav navbar-nav">
+            <li class="margin_top"><input class="search-field" type="text" name="search" placeholder="Search movies..."></li>
+            <li id="first_li"><%= link_to 'About', about_path %></li>
+            <li><%= link_to 'Log in', new_user_session_path %></li>
+            <li><%= link_to 'Sign up', new_user_registration_path %></li>
+          </ul>
         </div>
-        <div class="col-sm-3">
-          <%= link_to 'Sign up', new_user_registration_path %>
-        </div>
-      </div>
-      <br>
-      <div class="row text-center text_header padding">
-        <div class="col-sm-3">
-          <p>Movies</p>
-        </div>
-        <div class="col-sm-3">
-          <p>Tv</p>
-        </div>
-        <div class="col-sm-3">
-          <p>News</p>
-        </div>
-        <div class="col-sm-3">
-          <p>Tickets</p>
-        </div>
-      </div>
+      </nav>
     </div>
   </div>
 </header>
