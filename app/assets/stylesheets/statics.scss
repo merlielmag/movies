@@ -73,10 +73,6 @@ body {
   clear: both;
 }
 
-.container_pelicula {
-  margin: auto;
-}
-
 .content {
   border: 1px solid $grey;
   padding: 1em;
@@ -147,6 +143,10 @@ body {
 
 .padding_zero {
   padding: 0px !important;
+}
+
+.peli_container {
+  margin-bottom: 2em;
 }
 
 .search-field {
