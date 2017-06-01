@@ -1,26 +1,14 @@
-<tbody>
 <% @pelicula.each do |peli| %>
-    <tr>
-      <td>
-        <%= peli.id %>
-      </td>
-      <td>
+  <div class="col-xs-3">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <img src= '<%= peli.image %>' alt="">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-12">
         <%= peli.name %>
-      </td>
-      <td>
-        <%= peli.stars %>
-      </td>
-      <td>
-        <%= peli.main_actor %>
-      </td>
-      <td>
-        <%= peli.year %>
-      </td>
-      <td align="center">
-        <%= link_to 'Visualizar', pelicula_path(peli), :nom => "Visualizar", :class => 'btn btn-sm btn-success', style:"color: white;" %>
-        <%= link_to "Editar", edit_pelicula_path(peli), :nom => "Editar", :class => 'btn btn-sm btn-warning', style:"color: white;" %>
-        <%= link_to 'Eliminar', pelicula_path(peli), method: :delete, class:"btn btn-sm btn-danger" %>
-      </td>
-    </tr>
-  <% end %>
-</tbody>
+      </div>
+    </div>
+  </div>
+<% end %>
