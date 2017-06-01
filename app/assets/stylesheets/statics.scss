@@ -133,6 +133,8 @@ body {
 
 .one_column {
   width: 25%;
+  height: 305px;
+  overflow: hidden;
   border-left: 1px solid $white;
   float: left;
 }
@@ -152,6 +154,10 @@ body {
 .search-field {
   width: 350px;
   color: $black;
+}
+
+.slider_container {
+  height: 305px;
 }
 
 .sub_text {
@@ -185,9 +191,4 @@ body {
 .titol {
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.two_column {
-  width: 50%;
-  float: left;
 }
