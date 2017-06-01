@@ -135,15 +135,18 @@ body {
   margin-top: 1em;
 }
 
-.navbar-default {
+.navbar-inverse {
   background: none !important;
   border: none !important;
   color: $white !important;
-  padding-top: 1em;
 }
 
 .navbar-nav {
   float: none !important;
+}
+
+.navbar-toggle {
+  border: none !important;
 }
 
 .one_column {
