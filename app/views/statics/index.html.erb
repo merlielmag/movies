@@ -11,9 +11,9 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner slider_container">
           <div class="item active">
-            <img src="http://lorempixel.com/400/200/" alt="Los Angeles" style="width:100%;">
+            <img src="<%= @pelicula.limit(7).order('RANDOM()').first.image %>" alt="" style="width:100%;">
             <div class="carousel-caption">
               <h3>Peli - 1</h3>
               <p>...is always so much fun!</p>
@@ -21,7 +21,7 @@
           </div>
 
           <div class="item">
-            <img src="http://lorempixel.com/400/200/" alt="Chicago" style="width:100%;">
+            <img src="<%= @pelicula.limit(7).order('RANDOM()').last.image %>" alt="" style="width:100%;">
             <div class="carousel-caption">
               <h3>Peli - 2</h3>
               <p>...is always so much fun!</p>
@@ -29,7 +29,7 @@
           </div>
 
           <div class="item">
-            <img src="http://lorempixel.com/400/200/" alt="New york" style="width:100%;">
+            <img src="<%= @pelicula.limit(7).order('RANDOM()').last.image %>" alt="" style="width:100%;">
             <div class="carousel-caption">
               <h3>Peli - 3</h3>
               <p>...is always so much fun!</p>
@@ -49,10 +49,10 @@
       </div>
     </div>
     <div class="one_column hidden-xs hidden-sm">
-      <img class="img-responsive" src="http://lorempixel.com/400/402/" alt="">
+      <img src="<%= @pelicula.limit(7).order('RANDOM()').first.image %>" alt="" style="width:100%";>
     </div>
     <div class="one_column hidden-xs hidden-sm">
-      <img class="img-responsive" src="http://lorempixel.com/400/402/" alt="">
+      <img src="<%= @pelicula.limit(7).order('RANDOM()').last.image %>" alt="" style="width:100%;">
     </div>
   </div>
   <div class="clear">

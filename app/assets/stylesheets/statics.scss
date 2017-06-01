@@ -73,10 +73,6 @@ body {
   clear: both;
 }
 
-.container_pelicula {
-  margin: auto;
-}
-
 .content {
   border: 1px solid $grey;
   padding: 1em;
@@ -137,6 +133,8 @@ body {
 
 .one_column {
   width: 25%;
+  height: 305px;
+  overflow: hidden;
   border-left: 1px solid $white;
   float: left;
 }
@@ -149,9 +147,17 @@ body {
   padding: 0px !important;
 }
 
+.peli_container {
+  margin-bottom: 2em;
+}
+
 .search-field {
   width: 350px;
   color: $black;
+}
+
+.slider_container {
+  height: 305px;
 }
 
 .sub_text {
@@ -185,9 +191,4 @@ body {
 .titol {
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.two_column {
-  width: 50%;
-  float: left;
 }
