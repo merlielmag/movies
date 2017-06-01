@@ -102,6 +102,17 @@ body {
   color: $resaltat;
 }
 
+.login {
+  background: $white;
+  color: $black;
+  width: 30%;
+  height: 50vh;
+  border: 1px solid $grey;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+}
+
 .marquesina {
   background: $black;
   color: $white;
