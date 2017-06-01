@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  get '/index' => 'statics#index', :as => :index
   get '/about' => 'statics#about', :as => :about
 
   root 'statics#index'
