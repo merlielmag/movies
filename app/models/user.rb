@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
   has_many :top_movies
   has_one :setting
+
+  after_create :create_setting
+
 end
