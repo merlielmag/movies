@@ -6,7 +6,7 @@
         <hr>
         <div class="row">
           <div class="col-xs-12">
-            <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#info"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Account Settings</button>
+            <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#info"><span class="glyphicon glyphicon-setting"></span>&nbsp;&nbsp;Account Settings</button>
             <div id="info" class="collapse in">
               <table class="table table-bordered table-hover">
                 <thead>
@@ -35,7 +35,9 @@
           <div class="col-xs-6">
             <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#country"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Country</button>
             <div id="country" class="collapse in">
-              <div class="well text-center"><%= @setting.country %></div>
+              <div class="well text-center">
+                <%= @setting.country %>
+              </div>
             </div>
           </div>
           <div class="col-xs-6">
@@ -47,7 +49,7 @@
             </div>
           </div>
         </div>
-        <%= link_to "Editar", edit_setting_path(@user), :nom => "Editar", :class => 'btn btn-warning btn-block btn-lg', style:"color: white;" %>
+        <%= link_to "Editar", edit_setting_path(@setting), :nom => "Editar", :class => 'btn btn-warning btn-block btn-lg', style:"color: white;" %>
         <br>
         <br>
       </div>

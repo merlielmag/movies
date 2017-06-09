@@ -1,47 +1,50 @@
 class SettingsController < ApplicationController
 
+  layout "admin"
+
   def index
     @user = current_user
-    @setting = Setting.find_by_user_id(@user)
+    @setting = current_user.setting
   end
 
   def show
-    @setting = Setting.find(@user)
+    @setting = Setting.find(params[:id])
   end
 
   def new
-    @setting = Setting.new
+    @setting = current_user.build_setting
   end
 
+
   def create
-    @setting = Setting.new(settings_params)
+    @setting = current_user.build_setting(setting_params)
 
     if @setting.save
-      redirect_to settings_path, notice: "Se ha guardado los datos!!"
+    	redirect_to settings_path
     else
-      render :new
+    	render :new
     end
   end
 
+
   def edit
-    @setting = Setting.find_by_user_id(@user)
+    @setting = Setting.find(params[:id])
   end
 
   def update
     @setting = Setting.find(params[:id])
 
-    if @setting.update_attributes(settings_params)
-      redirect_to settings_path, notice: "èxit!"
+    if @setting.update_attributes(setting_params)
+     	redirect_to settings_path
     else
-      render :edit
+      render :index
     end
   end
 
 
   private
-
-  def settings_params
-    params.require(:setting).permit(:language, :country)
+  def setting_params
+    params.require(:setting).permit(:country, :language)
   end
 
 end
