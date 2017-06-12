@@ -37,6 +37,11 @@ body {
   margin-left: 10%;
 }
 
+.about_titol {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .align-right {
   text-align: right;
   padding-right: .5em;
@@ -205,9 +210,4 @@ body {
   color: $resaltat;
   text-transform: uppercase;
   margin-bottom: 0px;
-}
-
-.titol {
-  text-transform: uppercase;
-  font-weight: bold;
 }
