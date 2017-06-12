@@ -1,0 +1,27 @@
+<div id="wrapper">
+  <div class="titol">
+    <h2>Edita</h2>
+  </div>
+  <hr>
+
+  <div class="cos">
+    <%= form_for @setting do |setting|%>
+      <p>
+        <%= setting.label :Country %> <br>
+        <%= setting.text_field :country %>
+      </p>
+
+      <p>
+        <%= setting.label :Language %> <br>
+        <%= setting.text_field :language %>
+      </p>
+
+      <%= setting.submit "enviar datos", class:'btn btn-sm btn-info boto' %>
+
+    <% end %>
+
+    <% @setting.errors.full_messages.each do |mensaje| %>
+      <%= mensaje %>
+    <% end %>
+  </div>
+</div>
