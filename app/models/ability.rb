@@ -7,7 +7,7 @@ class Ability
         if user.email == 'lomerli@gmail.com'
           can :manage, :all
         else
-          can :read, Pelicula
+          can :read, :all
         end
     # Define abilities for the passed in user here. For example:
     #
