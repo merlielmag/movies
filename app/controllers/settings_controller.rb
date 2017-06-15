@@ -22,6 +22,7 @@ class SettingsController < ApplicationController
     @setting = current_user.build_setting(setting_params)
 
     if @setting.save
+      flash[:success] = t('flash.exito')
     	redirect_to settings_path
     else
     	render :new
@@ -37,9 +38,10 @@ class SettingsController < ApplicationController
     @setting = Setting.find(params[:id])
 
     if @setting.update_attributes(setting_params)
+      flash[:success] = t('flash.exito')
      	redirect_to settings_path
     else
-      render :index
+      render :edit
     end
   end
 
