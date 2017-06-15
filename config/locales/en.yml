@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  flash:
+    exito: "updated succesfully"

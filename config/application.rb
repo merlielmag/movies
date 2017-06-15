@@ -9,7 +9,7 @@ Bundler.require(*Rails.groups)
 module Movies
   class Application < Rails::Application
 
-    config.i18n.default_locale = :es
+    config.i18n.default_locale = :en
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

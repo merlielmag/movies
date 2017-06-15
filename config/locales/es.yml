@@ -21,7 +21,12 @@
 
 es:
   devise:
+    failure:
+      admin_user:
+        unauthenticated: "Por favor, inicia sesion"
     sessions:
+      admin_user:
+        signed_in: "Has iniciado session correctamente"
       user:
         signed_in: "Has iniciado session correctamente"
   activerecord:
