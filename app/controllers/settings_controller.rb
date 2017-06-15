@@ -39,7 +39,7 @@ class SettingsController < ApplicationController
     if @setting.update_attributes(setting_params)
      	redirect_to settings_path
     else
-      render :index
+      render :edit
     end
   end
 
