@@ -11,8 +11,12 @@ Rails.application.routes.draw do
   get '/index' => 'statics#index', :as => :index
   get '/about' => 'statics#about', :as => :about
 
+  get 'select_movies/index'
+
   resources :peliculas
   resources :settings
+
+  resources :select_movies, only: :index
 
   resources :charges
 
