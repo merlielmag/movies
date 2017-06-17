@@ -8,11 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    if admin_user_signed_in?
-      admin_dashboard_path
-    elsif user_signed_in?
     index_path
-    end
   end
 
 end
