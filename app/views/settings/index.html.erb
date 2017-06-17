@@ -1,58 +1,52 @@
-<div id="content">
+<div class="content">
+  <h4 class="titol">Benvingut <%= @user.email %></h4>
+  <hr>
   <div class="row">
     <div class="col-xs-12">
-      <div class="content">
-        <h4 class="titol">Benvingut <%= @user.email %></h4>
-        <hr>
-        <div class="row">
-          <div class="col-xs-12">
-            <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#info"><span class="glyphicon glyphicon-setting"></span>&nbsp;&nbsp;Account Settings</button>
-            <div id="info" class="collapse in">
-              <table class="table table-bordered table-hover">
-                <thead>
-                  <tr class="info">
-                    <th>Id</th>
-                    <th>Email</th>
-                    <th>Current Sign In At</th>
-                    <th>Sign In Count</th>
-                    <th>Created At</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><%= @user.id %></td>
-                    <td><%= @user.email %></td>
-                    <td><%= @user.current_sign_in_at %></td>
-                    <td><%= @user.sign_in_count %></td>
-                    <td><%= @user.created_at %></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#country"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Country</button>
-            <div id="country" class="collapse in">
-              <div class="well text-center">
-                <%= @setting.country %>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#lang"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Language</button>
-            <div id="lang" class="collapse in">
-              <div class="well text-center">
-                <%= @setting.language %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <%= link_to "Editar", edit_setting_path(@setting), :nom => "Editar", :class => 'btn btn-warning btn-block btn-lg', style:"color: white;" %>
-        <br>
-        <br>
+      <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#info"><span class="glyphicon glyphicon-setting"></span>&nbsp;&nbsp;Account Settings</button>
+      <div id="info" class="collapse in">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="info">
+              <th>Id</th>
+              <th>Email</th>
+              <th>Current Sign In At</th>
+              <th>Sign In Count</th>
+              <th>Created At</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><%= @user.id %></td>
+              <td><%= @user.email %></td>
+              <td><%= @user.current_sign_in_at %></td>
+              <td><%= @user.sign_in_count %></td>
+              <td><%= @user.created_at %></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#country"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Country</button>
+      <div id="country" class="collapse in">
+        <div class="well text-center">
+          <%= @setting.country %>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#lang"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;Language</button>
+      <div id="lang" class="collapse in">
+        <div class="well text-center">
+          <%= @setting.language %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= link_to "Editar", edit_setting_path(@setting), :nom => "Editar", :class => 'btn btn-warning btn-block btn-lg', style:"color: white;" %>
+  <br>
+  <br>
 </div>
