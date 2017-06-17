@@ -91,6 +91,10 @@ body {
   color: $resaltat;
 }
 
+.foto_petita {
+  max-height: 100px;
+}
+
 .icones {
   font-size: 2.5em;
 }
@@ -187,6 +191,13 @@ body {
 
 .sub_text {
   color: $fosc;
+}
+
+.table_compra {
+  width: 100%;
+  tr td {
+    vertical-align: middle !important;
+  }
 }
 
 .text_header {
