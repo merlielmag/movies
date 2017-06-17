@@ -15,6 +15,11 @@ body {
   background: $grey !important;
 }
 
+#flash_wrapper {
+  text-align: center;
+  height: 55px;
+}
+
 #wrapper {
   max-width: 1100px;
   margin: auto;
