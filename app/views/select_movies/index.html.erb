@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <h2 class="text-center">Comprar</h2>
+    <table class="table table_compra text-center">
+      <tr>
+        <td><img src="<%= @pelicula.image %>" alt="" class="foto_petita"></td>
+        <td><%= @pelicula.name %></td>
+        <td><%= @pelicula.precio / 100.0 %>&nbsp;€</td>
+        <td><button class="btn btn-danger">Eliminar</button></td>
+        <td><script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="A month's subscription"
+                data-amount=<% @pelicula.precio %>
+                data-locale="auto">
+            </script></td>
+      </tr>
+    </table>
+  </div>
+</div>

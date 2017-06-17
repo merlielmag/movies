@@ -22,8 +22,8 @@
     </div>
     <div class="row text-center">
       <div class="col-xs-12">
-        <%= link_to new_charge_path do %>
-          <button class="btn btn-info">5.00$</button>
+        <%= link_to select_movies_path(id: peli.id) do %>
+          <button class="btn btn-info"><%= peli.precio / 100.0 %>&nbsp;€</button>
         <% end %>
       </div>
     </div>
