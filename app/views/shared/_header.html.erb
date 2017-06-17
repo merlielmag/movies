@@ -38,7 +38,7 @@
                 <%= link_to 'Sign up', new_user_registration_path %>
               </li>
             <% end %>
-            
+
           </ul>
         </div>
       </nav>
@@ -65,3 +65,8 @@
     </div>
   </div>
 </div>
+<% if flash.present? %>
+  <div id="flash_wrapper">
+    <%= render partial: "shared/flash_messages", flash: flash %>
+  </div>
+<%end%>
