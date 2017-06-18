@@ -7,12 +7,7 @@
         <td><%= @pelicula.name %></td>
         <td><%= @pelicula.precio / 100.0 %>&nbsp;€</td>
         <td><button class="btn btn-danger">Eliminar</button></td>
-        <td><script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                data-description="A month's subscription"
-                data-amount=<% @pelicula.precio %>
-                data-locale="auto">
-            </script></td>
+        <td><%= render 'charges/new' %></td>
       </tr>
     </table>
   </div>

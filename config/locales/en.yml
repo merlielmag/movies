@@ -23,3 +23,4 @@ en:
   hello: "Hello world"
   flash:
     exito: "updated succesfully"
+    payment: "Has comprado con exito!"
