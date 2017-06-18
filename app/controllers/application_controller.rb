@@ -8,7 +8,11 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    index_path
+    case resource
+    when User
+      index_path
+    when AdminUser
+      admin_dashboard_path
+    end
   end
-
 end

@@ -3,6 +3,9 @@ class ChargesController < ApplicationController
   before_action :authenticate_user!
 
   def new
+    @pelicula = Pelicula.find(params[:id])
+    @email = User.email
+    @amount = @pelicula.precio
   end
 
   def create
@@ -18,8 +21,10 @@ class ChargesController < ApplicationController
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Rails Stripe customer',
-      :currency    => 'usd'
+      :currency    => 'eur'
     )
+    flash[:success] = t('flash.payment')
+    redirect_to settings_path
 
   rescue Stripe::CardError => e
     flash[:error] = e.message

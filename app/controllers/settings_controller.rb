@@ -45,7 +45,6 @@ class SettingsController < ApplicationController
     end
   end
 
-
   private
   def setting_params
     params.require(:setting).permit(:country, :language)

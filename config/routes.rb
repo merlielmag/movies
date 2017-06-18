@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :select_movies, only: :index
 
   resources :charges
+  resources :payments
 
   root 'statics#index'
 
