@@ -7,7 +7,6 @@ class SettingsController < ApplicationController
   def index
     @user = current_user
     @setting = current_user.setting
-    # @payments = Payment.all
     @payment = Payment.where(user_id: @user.id).all
   end
 
