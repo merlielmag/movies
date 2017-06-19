@@ -9,6 +9,7 @@ class ChargesController < ApplicationController
   end
 
   def create
+    @amount = 500
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]
@@ -20,6 +21,7 @@ class ChargesController < ApplicationController
       :description => 'Rails Stripe customer',
       :currency    => 'eur'
     )
+    current_user.payments.create(subscription: false, channel: 'stripe', amount: @amount)
     flash[:success] = t('flash.payment')
     redirect_to settings_path
 

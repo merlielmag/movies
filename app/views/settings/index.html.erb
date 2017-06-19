@@ -13,7 +13,6 @@
               <th>Current Sign In At</th>
               <th>Sign In Count</th>
               <th>Created At</th>
-              <th>Payments</th>
             </tr>
           </thead>
           <tbody>
@@ -23,8 +22,36 @@
               <td><%= @user.current_sign_in_at %></td>
               <td><%= @user.sign_in_count %></td>
               <td><%= @user.created_at %></td>
-              <td><%= @pago %></td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <button type="button" class="btn btn-info btn-block btn-lg" data-toggle="collapse" data-target="#info"><span class="glyphicon glyphicon-setting"></span>&nbsp;&nbsp;Pagos</button>
+      <div id="info" class="collapse in">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="info">
+              <th>User Id</th>
+              <th>Date</th>
+              <th>Channel</th>
+              <th>Subscription</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @payment.each do |pago| %>
+              <tr>
+                <td><%= pago.user_id %></td>
+                <td><%= pago.created_at %></td>
+                <td><%= pago.channel %></td>
+                <td><%= pago.subscription %></td>
+                <td><%= pago.amount %></td>
+              </tr>
+            <% end %>
           </tbody>
         </table>
       </div>
