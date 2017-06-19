@@ -214,4 +214,13 @@ module ApplicationHelper
       "Zimbabwe": "Zimbabwe",
     }
   end
+
+  def options_for_language
+    idiomas = {
+      "Spanish": "Spanish",
+      "English": "English",
+      "French": "French",
+      "Catalan": "Catalan",
+    }
+  end
 end
