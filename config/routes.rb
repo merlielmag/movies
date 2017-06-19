@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  # get 'payment_select/select_plan'
+
+  # get 'payment_select/select_monthly_subscription'
+
+  get '/select_plan' => 'payment_select#select_plan', as: :select_plan
+  get '/select_monthly_subscription' => 'payment_select#select_monthly_subscription', as: :select_monthly_subscription
+
   devise_for :users, controllers: { sessions: 'users/sessions', registrations: 'users/registrations' }
 
   devise_for :admin_users, ActiveAdmin::Devise.config

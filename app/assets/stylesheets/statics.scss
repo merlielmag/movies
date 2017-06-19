@@ -9,6 +9,7 @@ $black: black;
 $blue: #1B97E3;
 $resaltat: #FDEE00;
 $background: orange;
+$bg_buy: #e9f3f8;
 
 
 body {
@@ -94,10 +95,6 @@ body {
 }
 .footer_link a:hover {
   color: $resaltat;
-}
-
-.foto_petita {
-  max-height: 100px;
 }
 
 .icones {
@@ -227,4 +224,21 @@ body {
   color: $resaltat;
   text-transform: uppercase;
   margin-bottom: 0px;
+}
+.buy {
+  padding: 1em;
+  background-color: $bg_buy;
+  border-radius: 10px;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.foto_petita {
+  max-height: 300px;
 }
