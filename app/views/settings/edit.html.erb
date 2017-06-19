@@ -9,10 +9,13 @@
 
     <% end %>
     <%= form_for @setting do |setting|%>
-      <p>
+      <!-- <p>
         <%= setting.label :Country %> <br>
         <%= setting.text_field :country %>
-      </p>
+      </p> -->
+      <div class="field">
+        <%= setting.select :country, options_for_country, prompt: 'Select One', class: 'form-control' %>
+      </div>
 
       <p>
         <%= setting.label :Language %> <br>
