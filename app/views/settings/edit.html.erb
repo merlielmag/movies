@@ -9,15 +9,25 @@
 
     <% end %>
     <%= form_for @setting do |setting|%>
-      <p>
+      <!-- <p>
         <%= setting.label :Country %> <br>
         <%= setting.text_field :country %>
-      </p>
+      </p> -->
+      <div class="field">
+        <p>Selecciona un pais:</p>
+        <%= setting.select :country, options_for_country, prompt: 'Select One', class: 'form-control' %>
+      </div>
 
-      <p>
+      <!-- <p>
         <%= setting.label :Language %> <br>
         <%= setting.text_field :language %>
-      </p>
+      </p> -->
+      <hr>
+      <div class="field">
+        <p>Selecciona un idioma:</p>
+        <%= setting.select :language, options_for_language, prompt: 'Select One', class: 'form-control' %>
+      </div>
+      <br>
 
       <%= setting.submit "enviar datos", class:'btn btn-sm btn-info boto' %>
 
