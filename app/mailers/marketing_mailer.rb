@@ -12,7 +12,7 @@ def onboarding_mailer(user)
   I18n.with_locale(@user.locale) do
     mail from: I18n.t('mailer.maria'),
     to: @email,
-    bcc: "youthcandoit@kolau.com"
+    bcc: "youthcandoit@kolau.com",
     subject: I18n.t('mailer.el_titulo_html', first_name: @user.first_name)
   end
 end
