@@ -5,7 +5,8 @@ class Marketing::OnboardingMailer < ApplicationJob
       if user.is_a?(User)
         user = [user]
       else
-        user = User.where('canceled IS NOT TRUE and active IS TRUE')
+        # user = User.where('canceled IS NOT TRUE and active IS TRUE')
+        user = User.all
       end
     end
     user.each do |user|
@@ -20,7 +21,12 @@ class Marketing::OnboardingMailer < ApplicationJob
             user.marketing_mailer = 1
             user.marketing_mailer_date = Date.today
             user.save
-            MarketingMailer.onboarding_mailer_third_mailer(user).delideliver_now
+            MarketingMailer.onboarding_mailer_second_mailer(user).deliver_now
+          elsif user.marketing_mailer == 1 && user.marketing_mailer_date > 4.days.ago
+            user.marketing_mailer = 1
+            user.marketing_mailer_date = Date.today
+            user.save
+            MarketingMailer.onboarding_mailer_third_mailer(user).deliver_now
           end
         end
       rescue => e
