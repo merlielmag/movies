@@ -61,6 +61,31 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  # ---------------------
+  config.action_mailer.default_url_options = { :host => 'merli-movies.herokuapp.com'}
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp.sendgrid.net",
+    port: 587,
+    domain: ENV["GMAIL_DOMAIN"],
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["MAILER_USERNAME"],
+    password: ENV["MAILER_PASSWORD"]
+  }
+
+  config.middleware.use ExceptionNotification::Rack,
+          :email => {
+            :email_prefix => "[Error app]",
+            :sender_address => %{"notifier" <algo@algo.com>},
+            :exception_recipients => %w{algo@algo.com}
+          }
+  # ---------------------
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true

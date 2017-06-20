@@ -24,3 +24,5 @@ en:
   flash:
     exito: "updated succesfully"
     payment: "Has comprado con exito!"
+  mailer:
+    el_titulo_html: "Bienvenid@ a la aplicación %{first_name}"

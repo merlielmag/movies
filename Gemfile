@@ -36,6 +36,9 @@ gem 'active_bootstrap_skin'
 # ---STRIPE (cobros)---
 gem 'stripe'
 
+# ---SIDEKIQ (jobs)---
+gem 'sidekiq'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
