@@ -39,6 +39,10 @@ gem 'stripe'
 # ---SIDEKIQ (jobs)---
 gem 'sidekiq'
 
+# PER PROBLEMES AMB HEROKU--------
+gem 'exception_notification'
+gem 'exception_notification-rake'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
