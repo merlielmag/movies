@@ -14,6 +14,7 @@ module ApplicationHelper
     end
   end
 
+
   def options_for_country
     paises = {
       "Afghanistan": "Afghanistan",
