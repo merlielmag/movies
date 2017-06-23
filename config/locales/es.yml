@@ -38,5 +38,10 @@ es:
               too_short: "ha de tener al menos dos letras"
             language:
               too_short: "ha de tener al menos dos letras"
+  hello: "Hello world"
   flash:
-    exito: "Los datos se han actualizado"
+    exito: "updated succesfully"
+    payment: "Has comprado con exito!"
+  mailer:
+    el_titulo_html: "Bienvenid@ a la aplicación %{first_name}"
+    default: "support@merliapps.com"

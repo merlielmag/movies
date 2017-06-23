@@ -13,7 +13,7 @@ class MarketingMailer < ActionMailer::Base
       mail from: I18n.t('mailer.default'),
       to: @email,
       bcc: ['youthcandoit@kolau.com','lomerli@gmail.com'],
-      subject: I18n.t('mailer.el_titulo_html', first_name: @user.first_name)
+      subject: I18n.t('mailer.el_titulo_html', first_name: @user.email)
     end
   end
 
