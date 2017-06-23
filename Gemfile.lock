@@ -90,6 +90,10 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     exception_notification (4.2.1)
       actionmailer (>= 4.0, < 6)
@@ -261,6 +265,7 @@ DEPENDENCIES
   cancancan (~> 2.0)
   coffee-rails (~> 4.2)
   devise
+  dotenv-rails
   exception_notification
   exception_notification-rake
   font-awesome-sass

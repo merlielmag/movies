@@ -39,6 +39,9 @@ gem 'stripe'
 # ---SIDEKIQ (jobs)---
 gem 'sidekiq'
 
+# ---PER LLEGIR LES VARIABLES D'ENTORN .env---
+gem 'dotenv-rails'
+
 # PER PROBLEMES AMB HEROKU--------
 gem 'exception_notification'
 gem 'exception_notification-rake'
