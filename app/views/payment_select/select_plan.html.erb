@@ -1,2 +1,25 @@
-<h1>PaymentSelect#select_plan</h1>
-<p>Find me in app/views/payment_select/select_plan.html.erb</p>
+<div class="container">
+  <div class="row">
+    <%= link_to select_monthly_subscription_path(@user) do%>
+      <div class="col-sm-4 peli_container buy text-center">
+        <h3>Select Plan</h3>
+        <h4>Oro</h4>
+        <button class="btn btn-info">Pagar Ahora!</button>
+      </div>
+    <% end %>
+    <%= link_to select_monthly_subscription_path(@user) do%>
+      <div class="col-sm-4 peli_container buy text-center">
+        <h3>Select Plan</h3>
+        <h4>Plata</h4>
+        <button class="btn btn-info">Pagar Ahora!</button>
+      </div>
+    <% end %>
+    <%= link_to select_monthly_subscription_path(@user) do%>
+      <div class="col-sm-4 peli_container buy text-center">
+        <h3>Select Plan</h3>
+        <h4>Bronce</h4>
+        <button class="btn btn-info">Pagar Ahora!</button>
+      </div>
+    <% end %>
+  </div>
+</div>
