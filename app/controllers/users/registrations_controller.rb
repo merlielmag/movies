@@ -11,7 +11,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     @user = current_user
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:email])
     super
     if @user.persisted?
       Marketing::OnboardingMailer.perform_now(@user)
