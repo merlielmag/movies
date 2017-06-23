@@ -3,13 +3,13 @@ class ChargesController < ApplicationController
   before_action :authenticate_user!
 
   def new
-    @pelicula = params[:pelicula_id]
+    @pelicula = params[:pelicula_name]
     @email = params[:user_email]
-    @amount = params[:pelicula_precio]
+    @precio = params[:pelicula_precio]
   end
 
   def create
-    @amount = 500
+    @amount = params[:precio]
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
       :source  => params[:stripeToken]

@@ -2,7 +2,7 @@
   <div class="col-xs-10 col-xs-offset-1">
     <h2 class="text-center">Comprar</h2>
 
-    <!-- <%= link_to new_charge_path(pelicula_id: @pelicula.id, user_email: @user.email, pelicula_precio: @pelicula.precio) do %> -->
+    <%= link_to new_charge_path(pelicula_id: @pelicula.id, pelicula_name: @pelicula.name, user_email: @user.email, pelicula_precio: @pelicula.precio) do %>
       <div class="col-xs-5 peli_container buy left">
         <div class="row text-center">
           <div class="col-xs-12">
@@ -21,11 +21,11 @@
         </div>
         <div class="row text-center">
           <div class="col-xs-12">
-            <%= render 'charges/new' %>
+            <button class="btn btn-info">Pagar Ahora!</button>
           </div>
         </div>
       </div>
-    <!-- <% end %> -->
+    <% end %>
 
     <%= link_to select_plan_path(pelicula_id: @pelicula.id, user_email: @user.email, pelicula_precio: @pelicula.precio) do %>
       <div class="col-xs-5 peli_container buy right">

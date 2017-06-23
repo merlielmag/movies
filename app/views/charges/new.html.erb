@@ -1,4 +1,5 @@
 <%= form_tag charges_path do %>
+  <%= hidden_field_tag :precio, @precio %>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -9,9 +10,9 @@
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="<%= @pelicula.name %>"
-          data-amount="<%= @amount %>"
+          data-description="<%= @pelicula %>"
           data-email="<%= @email %>"
+          data-amount=<%= @precio %>
           data-locale="auto">
   </script>
 <% end %>
