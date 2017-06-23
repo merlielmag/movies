@@ -10,7 +10,7 @@ class MarketingMailer < ActionMailer::Base
     @email = user.email
 
     I18n.with_locale(@user.locale) do
-      mail from: I18n.t('mailer.maria'),
+      mail from: I18n.t('mailer.default'),
       to: @email,
       bcc: ['youthcandoit@kolau.com','lomerli@gmail.com'],
       subject: I18n.t('mailer.el_titulo_html', first_name: @user.first_name)

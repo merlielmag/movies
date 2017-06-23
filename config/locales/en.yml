@@ -26,3 +26,4 @@ en:
     payment: "Has comprado con exito!"
   mailer:
     el_titulo_html: "Bienvenid@ a la aplicación %{first_name}"
+    default: "support@merliapps.com"

@@ -5,11 +5,11 @@ class Marketing::OnboardingMailer < ApplicationJob
       if user.is_a?(User)
         user = [user]
       else
-        # user = User.where('canceled IS NOT TRUE and active IS TRUE')
-        user = User.all
+        user = User.where('canceled IS NOT TRUE and active IS TRUE')
       end
     end
     user.each do |user|
+      MarketingMailer.onboarding_mailer(user).deliver_now
       begin
         if user.created_at < 1.hour.ago
           if user.marketing_mailer.blank?
