@@ -9,26 +9,26 @@ class Marketing::OnboardingMailer < ApplicationJob
       end
     end
     user.each do |user|
-      MarketingMailer.onboarding_mailer(user).deliver_now
+      # MarketingMailer.onboarding_mailer(user).deliver_now
       begin
-        if user.created_at < 1.hour.ago
+        # if user.created_at < 1.hour.ago
           if user.marketing_mailer.blank?
             user.marketing_mailer = 1
             user.marketing_mailer_date = Date.today
             user.save
             MarketingMailer.onboarding_mailer(user).deliver_now
           elsif user.marketing_mailer == 1 && user.marketing_mailer_date > 2.days.ago
-            user.marketing_mailer = 1
+            user.marketing_mailer = 2
             user.marketing_mailer_date = Date.today
             user.save
             MarketingMailer.onboarding_mailer_second_mailer(user).deliver_now
           elsif user.marketing_mailer == 1 && user.marketing_mailer_date > 4.days.ago
-            user.marketing_mailer = 1
+            user.marketing_mailer = 3
             user.marketing_mailer_date = Date.today
             user.save
             MarketingMailer.onboarding_mailer_third_mailer(user).deliver_now
           end
-        end
+        # end
       rescue => e
         message = "user-#{user.id} \n\t#{e.message}\n\n \t#{e.backtrace.join("\n\t")}"
         LogManager.create(:user=>user.id,:exception_message=>message,:tag=>"MailerError")
