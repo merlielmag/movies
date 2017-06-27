@@ -4,3 +4,13 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+
+namespace :tasca do
+  desc "Fent proves del rake"
+  if Time.now.wday.between?(1,5)
+    task tasca_2: :environment do
+      Marketing::OnboardingMailer.perform_later
+    end
+  end
+end
