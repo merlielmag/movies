@@ -148,6 +148,11 @@ body {
   margin-right: 3em;
 }
 
+.margin_left {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .navbar-inverse {
   background: none !important;
   border: none !important;
@@ -229,6 +234,7 @@ body {
   padding: 1em;
   background-color: $bg_buy;
   border-radius: 10px;
+  border: 1px solid $background;
 }
 
 .left {
